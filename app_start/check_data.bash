@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ls -r /app/app_marks | more
-echo "q---------------------------------------------------------------------------"
+ls -R /app/app_marks/ | more
+echo "---------------------------------------------------------------------------"
 echo 'Users:'
 curl --ipv4 --location 'http://localhost:4567/api/users' | jq . | more
 echo 'Object sights:'
